@@ -1,0 +1,212 @@
+
+:root{
+  --rougeTomPress:#CA4A4B;
+  --grisTomPress:#999999;
+  --grisTomPress50: #99999958;
+  --grisDegrade50: radial-gradient(var(--grisTomPress50) 5%, white );
+  --grisDegrade: radial-gradient(var(--grisTomPress) 5%, white );
+}
+
+*{
+  box-sizing: border-box;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+/*---------------- Nav Bar------------------------*/
+
+#navBarre{
+    position: fixed;
+    top:0;
+    height: 70px;
+    border-bottom: 1px solid var(--rougeTomPress);
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+#burgerContainer{
+    height: 70px;
+    margin: 0;
+}
+#burgerContainer img{
+    max-height: 100%;
+}
+#navBarre>nav{
+    position: absolute;
+    top: 70px;
+    display: none;
+        height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+
+#bouttonNav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bouttonMenu{
+    text-decoration: none;
+    color:white;
+    background-color: var(--grisTomPress);
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+    padding:10px;
+    margin: 5px 0;
+}
+/*----------------Connexion ------------------------*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+section{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    width: 80%;
+}
+form>div{
+    width: 100%;
+    margin:10px 0;
+    display: flex;
+    flex-direction: column;
+}
+#connexion button[type='submit']{
+    width:100%;
+    margin-top: 20px;
+    height: 50px;
+}
+
+/*-------------------bouttons --------------------*/
+.lienButton{
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 2px 5px var(--grisTomPress);
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin: 10px 5px;
+    background-color: var(--grisTomPress);
+    color: white;
+    text-align: center;
+}
+
+.btnLarge{
+    width:100%;
+    margin: 0;
+}
+.inactif{
+
+    box-shadow: 2px 2px 5px transparent;
+
+}
+.vert{
+    background-color: green;
+    box-shadow: 2px 2px 5px var(--grisTomPress);
+
+
+}
+.orange{
+    background-color: orange;
+    box-shadow: 2px 2px 5px var(--grisTomPress);
+
+}
+.rouge{
+    background-color: red;
+    box-shadow: 2px 2px 5px var(--grisTomPress);
+
+}
+.grosBouttons{
+    width:100px;
+    height: 100px;
+}
+
+/*-------------------Alerte DLUO --------------------*/
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+
+    box-shadow: 2px 2px 5px var(--grisTomPress);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+article>h2, #menuDluo>h2{
+    width: 100%;
+    border-bottom:1px solid var(--rougeTomPress) ;
+}
+/*-----------------Accueil DLUO------------------------*/
+
+#menuDluo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    box-shadow: 2px 2px 5px var(--grisTomPress);
+    padding: 10px;
+}
+
+/*-----------------Ajouter une DLUO------------------------*/
+
+#addItemSection,#listDluoAlerte{
+    margin-top: 70px;
+}
+
+#addItemSection>form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#addItemSection>form>input{
+margin-bottom: 10px;
+}
+.itemDluo{
+
+padding: 10px;
+width: 90%;
+box-shadow: 2px 2px 5px var(--grisTomPress);
+margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.itemDluo>p{
+    text-align: center;
+}
+.traiter{
+    padding: 10px;
+    width: 80%;
+}
+
+/*-----------------Recherche une DLUO------------------------*/
+
+input{
+    width:100%;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+
+.containerCentrer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
