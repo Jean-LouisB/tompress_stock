@@ -1,4 +1,4 @@
-# Gestion de stock Tom Press
+# Gestion embarquée de stock
 ## Dédiée à Tom Press UNIQUEMENT
 ---
 Cette application est un outils mobile pour les magasiniers.
